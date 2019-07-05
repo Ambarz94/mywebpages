@@ -1,67 +1,162 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Website 4</title>
-	<link rel="stylesheet" href="main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<div id="top-header">
-		<h1 class="logo"><a href="index.html">Website</a></h1>
-		<div class="top-menu">
-			<a href="index.html">Home</a>
-			<a href="about-us.html">About Us</a>
-			<a href="#">Portofolio</a>
-			<a href="#">Toko</a>
-			<a href="#">Contact</a>
-		</div>
-	</div>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*HEADER*/
+#top-header{
+	background: #000000;
+	overflow: hidden;
+	border-bottom: 1px solid #c7c7c7;
 	
-	<div id="main-section">
-		<article class="post">
-			<div class="media-img">
-				<img src="imgs/my_pic.jpg" width="200">
-			</div>
-			<div class="media-text">
-				<header>
-					<h1><a id="post-title" href="index.html">Ade Ambar Zulkarnain</a></h1>
-					<h5>I'm Programmer</h5>
-				</header>
-				<p>– Cerita Hantu – Seorang fotografer tampan bernama 
-				Bryan tertegun ketika mendengar suara-suara di sekitarnya. 
-				Dikelas ini suasana sangat ramai sekali...</p>
-				<a id="read-more" href="index.html">Read more</a>
-			</div>
-		</article>
-	</div>
+}
+#top-header .top-menu{
 	
-	<div id="content-toko">
-		<div class="container">
-			<div class="row1">
-				Toko
-			</div>
-			<div class="content">
-				<div class="post">
-					<a href="https://www.facebook.com/"><img src="imgs/facebook_icon.png" width="30"></a>	 
-				</div>
-				<div class="post">
-					<a href="https://www.instagram.com/"><img src="imgs/instagram_icon.png" width="30"></a>			 
-				</div>
-				<div class="post">
-					<a href="https://www.linkedin.com/"><img src="imgs/linkedIn_icon.png" width="30"></a>
-				</div>
-				<div class="post">
-					<a href="https://www.twitter.com/"><img src="imgs/twitter_icon.png" width="30"></a>				 
-				</div>
-				<div class="post">
-					<a href="https://api.whatsapp.com/send?phone=6285591707896"><img src="imgs/whatsapp_icon.png" width="30"></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="the-footer">
-		&copy; 2018 Website. All Right Reserved.
-	</div>
-</body>
-</html>
+	text-align: center;
+	line-height: 60px;
+}
+.top-menu a{
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-right: 10px;
+	color: white;
+}
+
+.service {
+	background: red;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+
+#top-header .top-menu a:active{
+	background: #cb5858;
+}
+/*SECTION*/
+#main-section{
+	/* background: green; */
+	overflow: hidden;
+	padding: 20px;
+}
+#main-section .post{
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+#main-section .media-img{
+	float: left;
+	margin-right: 10px;
+}
+#main-section p{
+	margin-bottom: 10px;
+	text-indent: 20px;
+}
+#main-section h4{
+	margin-bottom: 10px;
+}
+
+#read-more{
+	color: white;
+	padding: 5px;
+	background: #000000;
+}
+#read-more:active{
+	background: #cb5858;
+}
+/*CONTENT*/
+.row1{
+	background: #000000;
+	color: white;
+	margin-bottom: 5px;
+	text-align: center;
+	padding: 5px;
+}
+#content-service .container{
+	text-align: center;
+}
+
+#content-service .post{
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 20px;
+	text-align: center;
+}
+
+#content-toko{
+	background: white;
+}
+
+#content-toko .post{
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 5px;
+}
+#content-toko .content{
+	text-align: center;
+}
+#content-toko .title{
+	font-size: 16px;
+	font-weight: bold;
+	max-width: 100px;
+	height: 35px;
+	overflow: hidden;
+	line-height: normal;
+	margin-bottom: 5px;
+}
+
+#content-contact .container{
+	text-align: center;
+}
+
+#content-contact .icon{
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 5px;
+}
+
+.title a{
+	color: black;
+	text-decoration: none;
+}
+
+.author{
+	font-size: 12px;
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 5px;
+}
+
+.container img{
+	margin-bottom: 5px;
+}
+/*FOOTER*/
+
+.the-footer{
+	background: #000000;
+	color: white;
+	text-align: center;
+	border-top: 1px solid #ffffff;
+	padding: 20px;
+	overflow: hidden;
+}
+.the-footer .media-ico{
+	float: left;
+}
+
+@media screen and (max-width: 500px) {
+	#top-header .logo{
+		float: none;
+		padding: 10px;
+	}
+}
+
