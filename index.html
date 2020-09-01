@@ -1,212 +1,142 @@
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
-a{
-	text-decoration: none;
-	color: black;
-}
-
-/*HEADER*/
-#top-header{
-	background: #FFFFFF;
-	overflow: hidden;
-	border-bottom: 1px solid #c7c7c7;
-}
-#top-header #top-logo{
-	float: left;
-	margin-left: 20px;
-	padding: 10px;
-}
-#top-header #top-menu{
-	float: right;
-	line-height: 60px;
-}
-#top-menu a{
-	border: 2px solid #22B573;
-	border-radius: 5px;
-	padding: 10px 20px;
-	margin-right: 10px;
-	color: #22B573;
-}
-
-.service {
-	background: red;
-}
-
-.title {
-	text-align: center;
-	width: 100%;
-}
-
-#top-header #top-menu a:active{
-	background: #cb5858;
-}
-/*SECTION*/
-#main-section{
-	/* background: green; */
-	overflow: hidden;
-	width:100%;
-	height:100vh;
-	padding-left: 20px;
-	display:-webkit-box;
-	-webkit-box-orient:horizontal;
-}
-
-#main-section .about-me{
-	-webkit-box-flex:1;
-	position: relative;
-	padding: 130px 10px 0px 10px;
-	/* float: left; */
-	/* background-color: red; */
-}
-
-#main-section .about-me span{
-	color: #22B573;
-}
-
-#main-section .about-me h2{
-	color: #22B573;
-}
-#main-section .post{
-	overflow: hidden;
-	padding: 120px;
-	/* -webkit-box-flex: 1; */
-	/* margin-bottom: 10px; */
-	/* float: left; */
-	background-color: #22B573;
-}
-#main-section .media-img{
-	float: left;
-	margin-right: 10px;
-}
-#main-section p{
-	margin-bottom: 10px;
-	text-indent: 20px;
-}
-#main-section h4{
-	margin-bottom: 10px;
-}
-
-#read-more{
-	color: #22B573;
-	padding: 5px;
-	background: white;
-}
-#read-more:active{
-	background: #cb5858;
-}
-
-#main-section .button{
-	/* border: 2px solid #22B573; */
-	margin-top:5px;
-	padding:10px;
-}
-#main-section .btn-me{
-	border: 2px solid #22B573;
-	color: #22B573;
-	padding: 5px;
-	margin-right: 10px;
-}
-/*CONTENT*/
-.row1{
-	background: white;
-	color: #22B573;
-	margin-bottom: 5px;
-	text-align: center;
-	padding: 5px;
-	border-bottom: 1px solid #c7c7c7;
-}
-#content-service .container{
-	text-align: center;
-}
-
-#content-service .post{
-	display: inline-block;
-	overflow: hidden;
-	margin-left: 20px;
-	text-align: center;
-}
-
-#content-toko{
-	background: white;
-}
-
-#content-toko .post{
-	display: inline-block;
-	overflow: hidden;
-	margin-left: 5px;
-}
-#content-toko .content{
-	text-align: center;
-}
-#content-toko .title{
-	font-size: 16px;
-	font-weight: bold;
-	max-width: 100px;
-	height: 35px;
-	overflow: hidden;
-	line-height: normal;
-	margin-bottom: 5px;
-}
-
-
-.title a{
-	color: black;
-	text-decoration: none;
-}
-
-.author{
-	font-size: 12px;
-	width: 100px;
-	space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	margin-bottom: 5px;
-}
-
-.container img{
-	margin-bottom: 5px;
-}
-
-/*FOOTER*/
-#the-footer{
-	background: #22B573;
-	color: white;
-	/* border-top: 1px solid #22B573; */
-	padding: 20px;
-	overflow: hidden;
-	display:-webkit-box;
-	-webkit-box-orient:horizontal;
-}
-#the-footer .media-ico{
-	/* float: left; */
-}
-
-#the-footer .copyright{
-	/* float: left; */
-	padding: 10px;
-	-webkit-box-flex:1;
-	/* font-size: 17px; */
-	/* background-color: red; */
-}
-
-#the-footer .sosmed-icon .icon{
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Paper Box</title>
+	<link rel="stylesheet" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- TOP HEADER -->
+	<div id="top-header">
+		<div id="top-logo">
+			<a href="index.html"><img src="imgs/PaperBOX_logo.svg" width="150"/></a>
+		</div>
+		<div id="top-menu">
+			<a href="index.html">Home</a>
+			<a href="about-us.html">About Us</a>
+			<a href="#">Service</a>
+			<a href="#">Portofolio</a>
+			<a href="#">Contact</a>
+		</div>
+	</div>
 	
-	float: left;
-	/* text-align: right; */
-	padding-right: 10px;
-	display: inline-block;
-}
-#the-footer .sosmed-icon .text-padding-10px{
-	padding-top: 10px;
-}
-
-@media screen and (max-width: 500px) {
-	#top-header .logo{
-		float: none;
-		padding: 10px;
-	}
-}
-
+	<!-- MAIN SECTION -->
+	<div id="main-section">
+		<div class="about-me">
+			<h3>Hello, I'm <span>Zulkarnain</span></h3>
+			<h2>FOUNDER PAPERBOX</h2>
+			<h5>Humanity Volunteer, Programming, etc</h5>
+			<div class="button">
+				<a class="btn-me">
+					Hire Me
+				</a>
+				<a class="btn-me">
+					Get CV
+				</a>
+			</div>
+		</div>
+		<article class="post">
+			<!-- <div class="media-img"> -->
+				<!-- <img src="imgs/pexels_photo.jpeg" width="200"> -->
+			<!-- </div> -->
+			<!-- <div class="media-text"> -->
+				<!-- <header> -->
+					<!-- <h1><a id="post-title" href="freelance-photographer.html">Ade Ambar Zulkarnain</a></h1> -->
+					<!-- <h5>I'm Programmer</h5> -->
+				<!-- </header> -->
+				<!-- <p>– Cerita Hantu – Seorang fotografer tampan bernama  -->
+				<!-- Bryan tertegun ketika mendengar suara-suara di sekitarnya.  -->
+				<!-- Dikelas ini suasana sangat ramai sekali...</p> -->
+				<!-- <a id="read-more" href="freelance-photographer.html">Read more</a> -->
+			<!-- </div> -->
+		</article>
+	</div>
+	
+	<!-- <div id="content-service"> -->
+		<!-- <div class="container"> -->
+			<!-- <div class="row1"> -->
+				<!-- Service -->
+			<!-- </div> -->
+			<!-- <div class="content"> -->
+				<!-- <div class="post"> -->
+					<!-- <img src="imgs/web-dev.png" width="120"> -->
+					<!-- <div class="title">Web</div> -->
+				<!-- </div> -->
+				<!-- <div class="post"> -->
+					<!-- <img src="imgs/app-dev.png" width="120"> -->
+					<!-- <div class="title">Apps</div> -->
+				<!-- </div> -->
+				<!-- <div class="post"> -->
+					<!-- <img src="imgs/phone-dev.png" width="60"> -->
+					<!-- <div class="title">Phone</div> -->
+				<!-- </div> -->
+				<!-- <div class="post"> -->
+					<!-- <img src="imgs/game-dev.png" width="120"> -->
+					<!-- <div class="title">Games</div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+	<!-- <div id="content-contact"> -->
+		<!-- <div class="container"> -->
+			<!-- <div class="row1"> -->
+				<!-- Find Me -->
+			<!-- </div> -->
+			<!-- <div class="content"> -->
+				<!-- <div class="icon"> -->
+					<!-- <a href="https://www.facebook.com/"><img src="imgs/facebook_icon.png" width="30"></a> -->
+				<!-- </div> -->
+				<!-- <div class="icon"> -->
+					<!-- <a href="https://www.instagram.com/zulkarnainambar/"><img src="imgs/instagram_icon.png" width="30"></a> -->
+				<!-- </div> -->
+				<!-- <div class="icon"> -->
+					<!-- <a href="https://www.linkedin.com/in/zulkarnainambar"><img src="imgs/linkedIn_icon.png" width="30"></a> -->
+				<!-- </div> -->
+				<!-- <div class="icon"> -->
+					<!-- <a href="https://www.twitter.com/"><img src="imgs/twitter_icon.png" width="30"></a> -->
+				<!-- </div> -->
+				<!-- <div class="icon"> -->
+					<!-- <a href="https://www.github.com/"><img src="imgs/github_icon.png" width="30"></a> -->
+				<!-- </div> -->
+				<!-- <div class="icon"> -->
+					<!-- <a href="https://api.whatsapp.com/send?phone=6285591707896"><img src="imgs/whatsapp_icon.png" width="30"></a> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+	<!-- FOOTER -->
+	<div id="the-footer">
+		<div class="copyright">
+			&copy; 2019 Ade Ambar Zulkarnain. All Right Reserved.
+		</div>
+		<div class="sosmed-icon">
+			<div class="content">
+				<div class="icon text-padding-10px">
+					Follow Me :
+				</div>
+				<div class="icon">
+					<a href="https://www.facebook.com/"><img src="imgs/facebook_icon.png" width="30"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.instagram.com/zulkarnainambar/"><img src="imgs/instagram_icon.png" width="30"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.linkedin.com/in/zulkarnainambar"><img src="imgs/linkedIn_icon.png" width="30"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.twitter.com/"><img src="imgs/twitter_icon.png" width="30"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.github.com/"><img src="imgs/github_icon.png" width="30"></a>
+				</div>
+				<div class="icon">
+					<a href="https://api.whatsapp.com/send?phone=6285591707896"><img src="imgs/whatsapp_icon.png" width="30"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
